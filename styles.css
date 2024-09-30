@@ -1,0 +1,153 @@
+/* Universal styles for margin and padding reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Use the font from your resume */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main container with rounded corners and black border */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid black; /* Black border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+/* Header with dark background and white text */
+header {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Styling for your name in the header */
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Sub-header paragraph in header */
+header p {
+    font-size: 1.1em;
+}
+
+/* Sidebar styles with appropriate section titles */
+.sidebar {
+    padding: 20px;
+    background-color: #eee;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Sidebar lists for skills, socials, etc. */
+.sidebar ul {
+    list-style: none; /* Remove default list styling */
+    margin: 10px 0;
+}
+
+.sidebar ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Hyperlinks within sidebar */
+.sidebar ul li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area (right side) */
+.main-content {
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Proper bullet points for sections */
+.main-content ul {
+    list-style: disc; /* Proper bullet points */
+    padding-left: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Experience section styling */
+.experience h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    color: #eee;
+}
+
+/* Bullet points styling for sections */
+.sidebar p, .sidebar ul li, .main-content p, .main-content ul li {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Ensure proper styling of links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
